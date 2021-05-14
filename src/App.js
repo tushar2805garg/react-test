@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React,{useState} from "react";
+import ReactDom from "react-dom";
+import './index.css';
+const Board_Size=10;
+const Board= () =>{
+  // const [board,setboard] = useState(
+  //   new Array(Board_Size).fill(0).map((row)=> {new Array(Board_Size).fill(0) }),
+  // ); 
+  const board=[[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4],[1,2,3,4,4,4,4,4,4,4]];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <h1>Score: {score}</h1> */}
+      <div className="">
+        {board.map((row) => (
+          <div className="row">
+            {row.map((cellValue) => {
+             return <div className="ele"></div>;
+            })}
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
-
-export default App;
+export default Board;
