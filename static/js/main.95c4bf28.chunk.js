@@ -1,0 +1,2 @@
+(this["webpackJsonpsnake-game"]=this["webpackJsonpsnake-game"]||[]).push([[0],{10:function(e,n,s){"use strict";s.r(n);s(1);var t=s(3),c=s.n(t),r=(s(4),s(0));c.a.render(Object(r.jsx)("div",{children:Object(r.jsx)("h1",{children:" Hello Tushar Here "})}),document.getElementById("root"))},4:function(e,n,s){}},[[10,1,2]]]);
+//# sourceMappingURL=main.95c4bf28.chunk.js.map
